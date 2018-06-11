@@ -14,6 +14,8 @@
 
 #define installable_zip 1
 
+%define pre_actions sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
+
 %define straggler_files\
     /bugreports\
     /d\
