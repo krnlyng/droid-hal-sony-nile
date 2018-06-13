@@ -10,6 +10,7 @@
 %define vendor_pretty Sony
 %define device_pretty Xperia XA2
 
+%define lunch_device aosp_h4113-user
 %define droid_target_aarch64 1
 
 #define installable_zip 1
