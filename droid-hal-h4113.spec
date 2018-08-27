@@ -20,7 +20,7 @@
 %define straggler_files\
     /bugreports\
     /d\
-    /dsp/dsp\
+    /dsp\
     /nonplat_file_contexts\
     /nonplat_hwservice_contexts\
     /nonplat_property_contexts\
