@@ -4,11 +4,7 @@
 %define device pioneer
 %define vendor sony
 
-%define rpm_device h4113
 %define rpm_vendor qualcomm
-
-%define vendor_pretty Sony
-%define device_pretty Xperia XA2
 
 %define lunch_device aosp_h4113-user
 %define droid_target_aarch64 1
