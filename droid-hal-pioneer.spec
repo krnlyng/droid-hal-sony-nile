@@ -4,6 +4,7 @@
 %define device pioneer
 %define vendor sony
 
+%define rpm_device pioneer
 %define rpm_vendor qualcomm
 
 %define lunch_device aosp_h4113-user
