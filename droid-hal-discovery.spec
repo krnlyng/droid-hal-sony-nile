@@ -42,7 +42,7 @@
 # Community builds may use the system partition for now
 %if 0%{?_obs_build_project:1}
 # On Android 8 the system partition is (intended to be) mounted on /.
-%define makefstab_skip_entries / /vendor
+%define makefstab_skip_entries / /vendor /dev/stune /dev/cpuset
 Requires: droid-system
 Requires: droid-system-vendor
 %endif
