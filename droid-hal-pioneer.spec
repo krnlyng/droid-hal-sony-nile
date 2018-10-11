@@ -10,7 +10,8 @@
 %define lunch_device aosp_h4113-user
 %define droid_target_aarch64 1
 
-#define installable_zip 1
+%define have_custom_img_boot 1
+%define have_custom_img_recovery 1
 
 %define pre_actions sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
 
