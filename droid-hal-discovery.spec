@@ -10,7 +10,8 @@
 %define lunch_device aosp_h4213-user
 %define droid_target_aarch64 1
 
-#define installable_zip 1
+%define have_custom_img_boot 1
+%define have_custom_img_recovery 1
 
 %define pre_actions sudo update-java-alternatives -s java-1.8.0-openjdk-amd64
 
@@ -42,7 +43,7 @@
 # Community builds may use the system partition for now
 %if 0%{?_obs_build_project:1}
 # On Android 8 the system partition is (intended to be) mounted on /.
-%define makefstab_skip_entries / /vendor /dev/stune /dev/cpuset
+%define makefstab_skip_entries / /vendor /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
 Requires: droid-system
 Requires: droid-system-vendor
 %endif
