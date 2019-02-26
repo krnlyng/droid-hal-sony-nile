@@ -34,10 +34,7 @@
 #define WANT_ADRENO_QUIRKS 1\
 %{nil}
 
-# Community builds may use the system partition for now
-%if 0%{?_obs_build_project:1}
 # On Android 8 the system partition is (intended to be) mounted on /.
 %define makefstab_skip_entries / /vendor /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
 Requires: droid-system
 Requires: droid-system-vendor
-%endif
