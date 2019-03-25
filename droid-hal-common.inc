@@ -38,3 +38,4 @@
 %define makefstab_skip_entries / /vendor /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
 Requires: droid-system
 Requires: droid-system-vendor
+Source99: droid-hal-common.inc
